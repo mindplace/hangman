@@ -4,7 +4,7 @@ View [live game here](https://mindplace.github.io/hangman/).
 
 Very vanilla JS and a focus on design resulted in this lovely little project. There may not be a real hangman, though!
 
-![hangman-screenshot](hangman-screenshot.jpg)
+![hangman-screenshot](hangman-game-screenshot.jpg)
 
 <hr>
 
@@ -12,4 +12,4 @@ Very vanilla JS and a focus on design resulted in this lovely little project. Th
 
 * OOP vanilla JavaScript, without any jQuery support
 * HTML & CSS
-* [Coolers](https://coolors.co/3d3522-4a442d-386150-58b09c-caf7e2) for great color palette ideas. 
+* [Coolers](https://coolors.co/3d3522-4a442d-386150-58b09c-caf7e2) for great color palette ideas.
