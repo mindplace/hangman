@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hangman</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="left">
+        <div class="hangman-figure">
+          <div class='circle'>
+            <span id="arcs">
+              <div class='arc red-10'></div>
+              <div class='arc red-9'></div>
+              <div class='arc red-8'></div>
+              <div class='arc red-7'></div>
+              <div class='arc red-6'></div>
+              <div class='arc red-5'></div>
+              <div class='arc red-4'></div>
+              <div class='arc red-3'></div>
+              <div class='arc red-2'></div>
+              <div class='arc red-1'></div>
+              <div class='arc red-0'></div>
+            </span>
+
+            <div class="end-game-messages">
+              <div class="guesses-left">
+                <span id="guesses-left-notice">Guesses left: </span>
+                <span id="guesses-left">10</span>
+              </div>
+
+              <h3 id="you-win-message">You Win</h3>
+              <h3 id="you-lose-message">You Lose</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div id="type-to-play-notice-wrapper">
+          <h1 id="type-to-play-notice">type to play</h1>
+        </div>
+
+        <div class="show-guess-result-section"></div>
+
+        <div class="guessed-letters">
+          <h4>guessed letters</h4>
+          <div id="guessed-letters-array"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="center">
+        <p><span>Having some fun with JavaScript and design :)</span></p>
+        <p><span>I'm </span><a href="http://estherleytush.com/" target="blank">Esther</a><span>,
+          and you can find me on </span><a href="https://github.com/mindplace" target="blank">Github</a></p>
+      </div>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="src/main.js"></script>
+  <script type="text/javascript" src="src/game.js"></script>
+</html>

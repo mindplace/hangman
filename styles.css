@@ -1,0 +1,184 @@
+/* -- Colors -------
+
+Davy's Gray        #575761
+Davy's - darker    #526C6A
+
+Aurometalsaurus    #648381
+Auro - lighter     #728E8C
+
+Dark Sea Green     #8ACB88
+Pastel Orange      #FFBF46
+Teal Deer          #9BDEAC
+Nyanza             #E4FDE1
+
+*/
+
+/* --- Base styles ---  */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #648381;
+}
+
+main {
+  flex: 1;
+  background-color: #648381;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+a:hover, a:visited, a:active { opacity: 1; }
+
+.bounce { margin: -5px 0 5px; }
+
+/* --- Hangman visualization --- */
+
+.circle {
+  position: relative;
+  margin: 3em auto;
+  width: 16em;
+  height: 16em;
+  border-radius: 50%;
+  border: 1px solid #728E8C;
+}
+
+.arc {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: 50%;
+  bottom: 50%;
+  left: -3px;
+  transform-origin: 100% 100%;
+  transform: skewX(11deg);
+}
+
+.arc:before {
+  display: block;
+  border: solid 3px #FFBF46;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  content: '';
+  transform: skewX(-9deg);
+}
+
+/* --- Game area section --- */
+
+#type-to-play-notice-wrapper {
+  height: 20px;
+  margin-bottom: 40px;
+}
+
+#type-to-play-notice {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.show-guess-result-section {
+  display: flex;
+  justify-content: center;
+}
+
+.blank-guess {
+  position: relative;
+  height: 30px;
+  background-color: #728E8C;
+  color: white;
+  width: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guessed-letters h4 {
+  text-align: center;
+  opacity: 0.3;
+  color: white;
+}
+
+#guessed-letters-array {
+  background-color: #526C6A;
+  color: #9BDEAC;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.guessed-letter {
+  opacity: 0.5;
+  width: 20px;
+  text-align: center;
+}
+
+.end-game-messages {
+  text-align: center;
+  padding: 20px;
+  margin-top: 70px;
+  border-radius: 5px;
+  height: 90px;
+}
+
+.end-game-messages h3 {
+  letter-spacing: 4.4px;
+  font-weight: 700;
+  display: none;
+}
+
+.end-game-messages #you-win-message { color: #9BDEAC; }
+.end-game-messages #you-lose-message { color: #FFBF46; }
+
+.end-game-messages .guesses-left #guesses-left-notice {
+  color: white;
+  opacity: 0.3;
+}
+
+.end-game-messages .guesses-left #guesses-left {
+  font-weight: 700;
+  color: #FFBF46;
+}
+
+/* --- Footer styles --- */
+
+footer {
+  padding: 20px;
+  background-color: #575761;
+}
+
+footer * { font-size: 10px; }
+footer p { margin: 5px 0; }
+footer p span {
+  color: white;
+  opacity: 0.3;
+}
+.center { text-align: center; }
