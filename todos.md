@@ -1,7 +1,6 @@
 Todo
 
 [] on mobile, give visible input, attach listener to input if available
-[] create icon for page
 [] tests
 [] make circle radius more responsive / drawn correctly
 
