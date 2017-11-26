@@ -6,7 +6,6 @@ function Hangman(){
   this.currentEvent;
 
   this.errorMovesLeft = 10;
-  this.blankLetterSpaces;
 
   this.selectGameWord();
   this.createBlankGuessSpaces();
@@ -58,11 +57,13 @@ Hangman.prototype.appendToListOfGuesses = function(){
 Hangman.prototype.populateCorrectGuessSpaces = function (){
   var guessElements = document.getElementsByClassName("show-guess-result-section")[0].children;
 
-  for(var i=0; i<this.computerChosenWord.length; i++){
-    var currentLetter = this.computerChosenWord[i];
-    if (this.currentGuess == currentLetter) {
-      var showElement = guessElements[i];
-      showElement.textContent = currentLetter;
+  if (humanIsPlayingGame()){
+    for(var i=0; i<this.computerChosenWord.length; i++){
+      var currentLetter = this.computerChosenWord[i];
+      if (this.currentGuess == currentLetter) {
+        var showElement = guessElements[i];
+        showElement.textContent = currentLetter;
+      }
     }
   }
 };
@@ -132,4 +133,19 @@ Hangman.prototype.attachInputListener = function(){
     $scope.currentEvent = e;
     $scope.manageUserGuess();
   });
+};
+
+// --- Start gameplay -----------------------------------------------------------
+
+function humanIsPlayingGame(){
+  var hangmanGamePagePresent = !!document.getElementById("hangman-game"),
+      specPageAbsent = !document.getElementById("spec-page");
+
+  return hangmanGamePagePresent && specPageAbsent;
+};
+
+if (humanIsPlayingGame()) {
+  new Hangman();
+  setupGamePage();
+  showWelcomeMessage();
 };

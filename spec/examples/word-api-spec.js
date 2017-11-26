@@ -10,7 +10,7 @@ describe("Word API", function() {
   });
 
   describe("#HttpClient", function(){
-    
+
     it("uses XMLHttpRequest to get the response", function(){
       // Test using JSONPlaceholder https://jsonplaceholder.typicode.com/
       var newClient = new HttpClient(),
@@ -22,6 +22,6 @@ describe("Word API", function() {
       });
     });
 
-  })
+  });
 
 });

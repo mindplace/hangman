@@ -25,7 +25,7 @@ function htmlToElement(html) {
 };
 
 function bounceLetter(letter){
-  if (letter === undefined) { return; }
+  if (letter === undefined || !humanIsPlayingGame()) { return; }
 
   var letterElem,
       lettersArray = document.getElementById("guessed-letters-array").children;
@@ -49,11 +49,4 @@ function growCircle(errorsLeft){
 
   currentArc.style.transform = newTransform;
   currentArc.style.display = "block";
-};
-
-// --- Start gameplay -----------------------------------------------------------
-if (document.getElementById("hangman-game")) {
-  new Hangman();
-  setupGamePage();
-  showWelcomeMessage();
 };
