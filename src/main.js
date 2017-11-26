@@ -1,7 +1,13 @@
-document.body.addEventListener("keypress", function(e){
-  document.body.removeEventListener(e.type, arguments.callee);
-  document.getElementById("type-to-play-notice").remove();
-});
+function setupGamePage(){
+  document.body.addEventListener("keypress", function(e){
+    document.body.removeEventListener(e.type, arguments.callee);
+    document.getElementById("type-to-play-notice").remove();
+  });
+
+  document.getElementById("restart-button").addEventListener("click", function(e){
+    location.reload();
+  });
+};
 
 function showWelcomeMessage(){
   var welcomeElement = document.getElementById("welcome-message");
@@ -11,10 +17,6 @@ function showWelcomeMessage(){
   function removeMessage(){ welcomeElement.style.opacity = "0"; }
   setTimeout(removeMessage, 1000);
 };
-
-document.getElementById("restart-button").addEventListener("click", function(e){
-  location.reload();
-});
 
 function htmlToElement(html) {
   var template = document.createElement('template');
@@ -47,4 +49,11 @@ function growCircle(errorsLeft){
 
   currentArc.style.transform = newTransform;
   currentArc.style.display = "block";
+};
+
+// --- Start gameplay -----------------------------------------------------------
+if (document.getElementById("hangman-game")) {
+  new Hangman();
+  setupGamePage();
+  showWelcomeMessage();
 };

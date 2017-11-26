@@ -133,6 +133,3 @@ Hangman.prototype.attachInputListener = function(){
     $scope.manageUserGuess();
   });
 };
-
-new Hangman();
-showWelcomeMessage();
