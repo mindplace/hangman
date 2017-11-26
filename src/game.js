@@ -29,6 +29,7 @@ Hangman.prototype.createBlankGuessSpaces = function(){
 
 Hangman.prototype.getUserGuess = function(){
   this.currentGuess = this.currentEvent.key;
+  document.getElementById("mobile-input").children[0].value = "";
   return this.currentGuess;
 };
 

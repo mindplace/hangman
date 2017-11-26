@@ -83,6 +83,34 @@ a:hover, a:visited, a:active { opacity: 1; }
   border: none;
 }
 
+#mobile-input {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  #mobile-input {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  #mobile-input input {
+    width: 100%; 
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: lavender;
+  }
+
+  #mobile-input input:focus {
+    outline-color: #8ACB88;
+  }
+}
+
 /* --- Hangman visualization --- */
 
 .circle {

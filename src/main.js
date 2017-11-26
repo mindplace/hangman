@@ -1,5 +1,5 @@
 document.body.addEventListener("keypress", function(e){
-  e.target.removeEventListener(e.type, arguments.callee);
+  document.body.removeEventListener(e.type, arguments.callee);
   document.getElementById("type-to-play-notice").remove();
 });
 

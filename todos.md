@@ -1,6 +1,5 @@
 Todo
 
-[] on mobile, give visible input, attach listener to input if available
 [] tests
 [] make circle radius more responsive / drawn correctly
 
