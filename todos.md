@@ -1,6 +1,5 @@
 Todo
 
-[] add h1 for the page
 [] on mobile, give visible input, attach listener to input if available
 [] create icon for page
 [] tests

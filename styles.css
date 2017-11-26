@@ -52,6 +52,37 @@ a:hover, a:visited, a:active { opacity: 1; }
 
 .bounce { margin: -5px 0 5px; }
 
+#welcome-message {
+  transition: 2s;
+  opacity: 0;
+  -webkit-transition: 2s; /* Safari */
+  position: absolute;
+  font-size: 60px;
+  z-index: 200;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  top: 200px;
+  color: #9BDEAC;
+}
+
+#restart-button {
+  position: absolute;
+  right: 20px;
+  border: 1px solid #575761;
+  padding: 5px 25px;
+  font-size: 12px;
+  color: #575761;
+  background-color: #728E8C;
+  cursor: pointer;
+}
+
+#restart-button:hover {
+  color: white;
+  background-color: #8ACB88;
+  border: none;
+}
+
 /* --- Hangman visualization --- */
 
 .circle {
@@ -83,23 +114,6 @@ a:hover, a:visited, a:active { opacity: 1; }
   border-radius: 50%;
   content: '';
   transform: skewX(-9deg);
-}
-
-#restart-button {
-  position: absolute;
-  right: 20px;
-  border: 1px solid #575761;
-  padding: 5px 25px;
-  font-size: 12px;
-  color: #575761;
-  background-color: #728E8C;
-  cursor: pointer;
-}
-
-#restart-button:hover {
-  color: white;
-  background-color: #8ACB88;
-  border: none;
 }
 
 /* --- Game area section --- */

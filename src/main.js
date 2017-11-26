@@ -3,6 +3,19 @@ document.body.addEventListener("keypress", function(e){
   document.getElementById("type-to-play-notice").remove();
 });
 
+function showWelcomeMessage(){
+  var welcomeElement = document.getElementById("welcome-message");
+  function showMessage(){ welcomeElement.style.opacity = "1"; }
+  setTimeout(showMessage, 100);
+
+  function removeMessage(){ welcomeElement.style.opacity = "0"; }
+  setTimeout(removeMessage, 2000);
+};
+
+document.getElementById("restart-button").addEventListener("click", function(e){
+  location.reload();
+});
+
 function htmlToElement(html) {
   var template = document.createElement('template');
   template.innerHTML = html;
@@ -34,4 +47,4 @@ function growCircle(errorsLeft){
 
   currentArc.style.transform = newTransform;
   currentArc.style.display = "block";
-}
+};
