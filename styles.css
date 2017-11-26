@@ -158,6 +158,14 @@ a:hover, a:visited, a:active { opacity: 1; }
 .end-game-messages #you-win-message { color: #9BDEAC; }
 .end-game-messages #you-lose-message { color: #FFBF46; }
 
+#computer-word { color: #E4FDE1; }
+#computer-word-wrapper {
+  display: none;
+  color: white;
+  font-size: 10px;
+  color: #000000; 
+}
+
 .end-game-messages .guesses-left #guesses-left-notice {
   color: white;
   opacity: 0.3;

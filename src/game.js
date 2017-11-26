@@ -108,6 +108,10 @@ Hangman.prototype.showWinMessage = function(e){
 
 Hangman.prototype.showLossMessage = function(e){
   document.getElementById("you-lose-message").style.display = "block";
+
+  document.getElementById("computer-word").innerText = this.computerChosenWord;
+  document.getElementById("computer-word-wrapper").style.display = "block";
+
   return true;
 }
 
