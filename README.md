@@ -10,6 +10,7 @@ Very vanilla JS and a focus on design resulted in this lovely little project. Th
 
 ## Technologies
 
-* OOP vanilla JavaScript, without any jQuery support
+* OOP vanilla JavaScript (without any jQuery support)
+* [Jasmine](https://jasmine.github.io/) for JavaScript testing
 * HTML & CSS
 * [Coolers](https://coolors.co/3d3522-4a442d-386150-58b09c-caf7e2) for great color palette ideas.
