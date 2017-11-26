@@ -1,12 +1,9 @@
 Todo
 
 [] add h1 for the page
-[] add 'restart' button
 [] on mobile, give visible input, attach listener to input if available
 [] create icon for page
 [] tests
-
-
 [] make circle radius more responsive / drawn correctly
 
 ```js

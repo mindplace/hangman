@@ -131,6 +131,10 @@ Hangman.prototype.attachInputListener = function(){
     $scope.currentEvent = e;
     $scope.manageUserGuess();
   });
+
+  document.getElementById("restart-button").addEventListener("click", function(e){
+    location.reload();
+  })
 };
 
 new Hangman();

@@ -85,6 +85,23 @@ a:hover, a:visited, a:active { opacity: 1; }
   transform: skewX(-9deg);
 }
 
+#restart-button {
+  position: absolute;
+  right: 20px;
+  border: 1px solid #575761;
+  padding: 5px 25px;
+  font-size: 12px;
+  color: #575761;
+  background-color: #728E8C;
+  cursor: pointer;
+}
+
+#restart-button:hover {
+  color: white;
+  background-color: #8ACB88;
+  border: none;
+}
+
 /* --- Game area section --- */
 
 #type-to-play-notice-wrapper {
@@ -163,7 +180,7 @@ a:hover, a:visited, a:active { opacity: 1; }
   display: none;
   color: white;
   font-size: 10px;
-  color: #000000; 
+  color: #000000;
 }
 
 .end-game-messages .guesses-left #guesses-left-notice {
