@@ -1,5 +1,4 @@
 function Hangman(){
-  this.wordOptions = ["apples", "oranges", "pears"];
   this.computerChosenWord;
 
   this.userGuessedLetters = [];
@@ -15,10 +14,7 @@ function Hangman(){
 };
 
 Hangman.prototype.selectGameWord = function(){
-  var randomIndex = Math.floor(Math.random() * this.wordOptions.length);
-  this.computerChosenWord = this.wordOptions[ randomIndex ],
-  this.blankLetterSpaces = this.computerChosenWord.length;
-
+  this.computerChosenWord = getWordFromAPI();
   return this.computerChosenWord;
 };
 

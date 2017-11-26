@@ -3,7 +3,6 @@ Todo
 [] add h1 for the page
 [] add 'restart' button
 [] on mobile, give visible input, attach listener to input if available
-[] make API call to https://api.datamuse.com/words for words
 [] create icon for page
 [] tests
 
