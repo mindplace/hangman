@@ -175,14 +175,16 @@ a:hover, a:visited, a:active { opacity: 1; }
 .end-game-messages {
   text-align: center;
   padding: 20px;
-  margin-top: 70px;
-  border-radius: 5px;
-  height: 90px;
+  margin-top: 30px;
+  height: 160px;
+  position: relative;
 }
 
 .end-game-messages h3 {
   letter-spacing: 4.4px;
   font-weight: 700;
+  margin-top: 0;
+  font-size: 20px;
   display: none;
 }
 
@@ -195,6 +197,10 @@ a:hover, a:visited, a:active { opacity: 1; }
   color: white;
   font-size: 10px;
   color: #000000;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 15px;
 }
 
 .end-game-messages .guesses-left #guesses-left-notice {
@@ -205,6 +211,14 @@ a:hover, a:visited, a:active { opacity: 1; }
 .end-game-messages .guesses-left #guesses-left {
   font-weight: 700;
   color: #FFBF46;
+}
+
+.end-game-messages .guesses-left {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 65px;
 }
 
 /* --- Footer styles --- */

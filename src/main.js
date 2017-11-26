@@ -9,7 +9,7 @@ function showWelcomeMessage(){
   setTimeout(showMessage, 100);
 
   function removeMessage(){ welcomeElement.style.opacity = "0"; }
-  setTimeout(removeMessage, 2000);
+  setTimeout(removeMessage, 1000);
 };
 
 document.getElementById("restart-button").addEventListener("click", function(e){
