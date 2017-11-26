@@ -2,6 +2,15 @@ describe("Word API", function() {
 
   describe("#getWordFromAPI", function(){
 
+    it("returns a word from the Datamuse API", function(){
+      var foundWord = getWordFromAPI();
+      expect(foundWord).not.toBeUndefined();
+    });
+
+  });
+
+  describe("#HttpClient", function(){
+    
     it("uses XMLHttpRequest to get the response", function(){
       // Test using JSONPlaceholder https://jsonplaceholder.typicode.com/
       var newClient = new HttpClient(),
@@ -13,11 +22,6 @@ describe("Word API", function() {
       });
     });
 
-    it("returns a word from the Datamuse API", function(){
-      var foundWord = getWordFromAPI();
-      expect(foundWord).not.toBeUndefined();
-    });
+  })
 
-  });
-  
 });
